@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <unistd.h>
+#include <string.h>
+
+void Liste()
+{
+  printf("");    
+  /*
+  Visuelle Design-Idee:
+  
+  textcolor(4); //->Veraenderbar
+
+  printf("Dein Wurf:  %d\t%d\t%d\t%d\t%d\t%d\n\n", Wurf[1], Wurf[2], Wurf[3], Wurf[4], Wurf[5], Wurf[6],)
+
+  printf("\t1er-Zahlen  (nur 1er zaehlen):    \t[WERT]\n", PUNKTE);  
+  printf("\t2er-Zahlen  (nur 2er zaehlen):    \t[WERT]\n", PUNKTE);         
+  printf("\t3er-Zahlen  (nur 3er zaehlen):    \t[WERT]\n", PUNKTE);
+  printf("\t4er-Zahlen  (nur 4er zaehlen):    \t[WERT]\n", PUNKTE);
+  printf("\t5er-Zahlen  (nur 5er zaehlen):    \t[WERT]\n", PUNKTE); 
+  printf("\t6er-Zahlen  (nur 6er zaehlen):    \t[WERT]\n\n, PUNKTE"); 
+
+  printf("\t3er-Pasch   (alle Zahlen zaehlen):\t[WERT]\n", PUNKTE);
+  printf("\t\t4er-Pasch   (alle Zahlen zaehlen):\t[WERT]\n", PUNKTE);       
+  printf("\tFullhouse   (25 Punkte):          \t[WERT]\n", PUNKTE);       
+  printf("\tkl. Strasse (30 Punkte):          \t[WERT]\n", PUNKTE);
+  printf("\tgr. Strasse (40 Punkte):          \t[WERT]\n", PUNKTE);
+  printf("\tKniffel     (50 Punkte):          \t[WERT]\n", PUNKTE);
+  printf("\tJoker       (alle Zahlen zaehlen):\t[WERT]\n\n", PUNKTE);
+  */
+}
+
+        
+
+void Auswertung()
+{
+  system("clear"); 
+  srand((unsigned) time (NULL));
+
+  int Wurf [5];
+  int Zahlen [7];
+
+  for(int i = 0; i  < 5; i++)   //generieren der Zufallszahlen
+      Wurf [i] = rand() % 6 + 1;
+
+  for (i = 0; i < 5; i++)
+  {
+      if (Wurf [i] = 1)   Zahlen [1] ++;
+      if (Wurf [i] = 2)   Zahlen [2] ++;
+      if (Wurf [i] = 3)   Zahlen [3] ++;
+      if (Wurf [i] = 4)   Zahlen [4] ++;
+      if (Wurf [i] = 5)   Zahlen [5] ++;
+      if (Wurf [i] = 6)   Zahlen [6] ++;
+  }  
+}
